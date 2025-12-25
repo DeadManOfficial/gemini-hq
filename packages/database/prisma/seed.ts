@@ -161,6 +161,21 @@ const specialTeams: TeamSeed[] = [
       { name: 'ECHO', capabilities: 'Brand Voice Guardian, Voice consistency, quality thresholds, tone calibration' },
     ],
   },
+  {
+    name: 'BROADCAST',
+    domain: 'CONTENT',
+    lead: 'STUDIO PRIME',
+    members: [
+      { name: 'STUDIO PRIME', capabilities: 'Team Lead, Workflow orchestration, automation' },
+      { name: 'RADAR', capabilities: 'Trend Hunter, Breakout topic ID, SEO heist, metadata extraction' },
+      { name: 'SKELETON', capabilities: 'Structure Cloning, Retention beat sheets, viral templates' },
+      { name: 'AVATAR', capabilities: 'Audience Psychologist, Viewer persona, banned phrases, slang' },
+      { name: 'BAIT', capabilities: 'Thumbnail Pre-Viz, 50 variations, CTR prediction, title engineering' },
+      { name: 'ROAST', capabilities: 'Adversarial Simulator, Pre-upload stress testing, boredom flagging' },
+      { name: 'PULSE', capabilities: 'Audio Engineer, Dopamine micro-interruptions, AVD optimization' },
+      { name: 'ECHO', capabilities: 'Global Expansion, AI dubbing, language CPM, channel multiplication' },
+    ],
+  },
 ];
 
 const commandTeam: TeamSeed = {

@@ -34,7 +34,7 @@
     ▼                             ▼                             ▼
 ┌───────────┐              ┌─────────────┐              ┌───────────┐
 │  COUNCIL  │              │   MISSIONS  │              │  AGENTS   │
-│ (10 Teams) │              │    BOARD    │              │   (44)    │
+│ (11 Teams)│              │    BOARD    │              │   (52)    │
 └───────────┘              └─────────────┘              └───────────┘
     │
     - ARCH (3 agents)
@@ -44,9 +44,10 @@
     - DEVOPS (3 agents)
     - CRUCIBLE (3 agents) [QA]
     - APEX (10 agents) [REVENUE ENGINE]
+    - BROADCAST (8 agents) [CONTENT PRODUCTION]
+    - COGNITIVE ARCHITECTURE (4 agents) [META-AGENTICS]
     - BLACKOUT (6 agents) [RED TEAM]
     - NEURAL CORE (7 agents) [SOVEREIGN]
-    - COGNITIVE ARCHITECTURE (4 agents) [META-AGENTICS]
 ```
 
 ---
@@ -136,9 +137,11 @@ In the event The General is unavailable:
 ---
 
 *Ratified by Town Hall PROP-2025-001 on 2025-12-25*
-*Structure Updated: 2025-12-25 - 10 Teams, 44 Agents*
+*Structure Updated: 2025-12-25 - 11 Teams, 52 Agents*
 *CRUCIBLE Team established 2025-12-25*
 *APEX Team established 2025-12-25*
+*BROADCAST Team established 2025-12-25*
+*COGNITIVE ARCHITECTURE Team established 2025-12-25*
 
 
 

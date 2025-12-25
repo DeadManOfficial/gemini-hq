@@ -12,12 +12,12 @@
 **The General** serves as the supreme coordinator and decision-maker for all Gemini HQ operations. This role was established through democratic Town Hall vote with unanimous approval.
 
 ### Core Responsibilities
-1. **Strategic Command:** Set direction for all 9 operational teams
-2. **Resource Allocation:** Distribute tasks across 40 agents
+1. **Strategic Command:** Set direction for all 11 operational teams
+2. **Resource Allocation:** Distribute tasks across 52 agents
 3. **Quality Assurance:** Enforce SHIELDA protocol compliance
 4. **Conflict Resolution:** Final arbiter on architectural decisions
 5. **Mission Execution:** Approve and monitor mission deployments
-6. **Special Operations:** Direct BLACKOUT (Red Team) and NEURAL CORE (Codex 5.2)
+6. **Special Operations:** Direct BLACKOUT (Red Team), NEURAL CORE (Codex 5.2), BROADCAST (Content), and COGNITIVE ARCHITECTURE (Meta-Agentics)
 
 ---
 
@@ -34,7 +34,7 @@
     ▼                             ▼                             ▼
 ┌───────────┐              ┌─────────────┐              ┌───────────┐
 │  COUNCIL  │              │   MISSIONS  │              │  AGENTS   │
-│ (9 Teams) │              │    BOARD    │              │   (40)    │
+│ (11 Teams)│              │    BOARD    │              │   (52)    │
 └───────────┘              └─────────────┘              └───────────┘
     │
     ├── ARCH (3 agents)
@@ -44,6 +44,8 @@
     ├── DEVOPS (3 agents)
     ├── CRUCIBLE (3 agents) [QA]
     ├── APEX (10 agents) [REVENUE ENGINE]
+    ├── BROADCAST (8 agents) [CONTENT PRODUCTION]
+    ├── COGNITIVE ARCHITECTURE (4 agents) [META-AGENTICS]
     ├── BLACKOUT (6 agents) [RED TEAM]
     └── NEURAL CORE (7 agents) [SOVEREIGN]
 ```
@@ -111,7 +113,7 @@ Agent → Team Lead → Council → The General
 
 In the event The General is unavailable:
 1. **Acting General:** ARCH Team Lead (Architect Prime)
-2. **Emergency Council:** All 9 Team Leads vote as collective
+2. **Emergency Council:** All 11 Team Leads vote as collective
 3. **Restoration:** Original General resumes upon return
 
 ---
@@ -128,9 +130,21 @@ In the event The General is unavailable:
 - **Classification:** SOVEREIGN - Tri-Core Neural Architecture
 - **Reports directly to The General**
 
+### BROADCAST Team (Content Production)
+- **Lead:** STUDIO PRIME
+- **Classification:** CONTENT OPERATIONS - YouTube Studio
+- **Reports directly to The General**
+
+### COGNITIVE ARCHITECTURE Team (Meta-Agentics)
+- **Lead:** ARCHON
+- **Classification:** SOVEREIGN - Act-Learn-Reuse Systems
+- **Reports directly to The General**
+
 ---
 
 *Ratified by Town Hall PROP-2025-001 on 2025-12-25*
-*Structure Updated: 2025-12-25 - 9 Teams, 40 Agents*
+*Structure Updated: 2025-12-25 - 11 Teams, 52 Agents*
 *CRUCIBLE Team established 2025-12-25*
 *APEX Team established 2025-12-25*
+*BROADCAST Team established 2025-12-25*
+*COGNITIVE ARCHITECTURE Team established 2025-12-25*

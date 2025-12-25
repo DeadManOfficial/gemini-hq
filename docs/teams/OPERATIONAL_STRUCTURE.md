@@ -2,7 +2,7 @@
 
 **Established:** 2025-12-25
 **Authority:** The General (PROP-2025-001)
-**Configuration:** 44 Agents / 10 Teams
+**Configuration:** 52 Agents / 11 Teams
 **Last Updated:** 2025-12-25
 
 ---
@@ -70,6 +70,23 @@
 | **RETRIEVER** | RAG Engine | Vector search, knowledge base access |
 | **SENTINEL** | Compliance | Platform policies, legal compliance |
 | **ECHO** | Brand Voice | Voice consistency, quality thresholds |
+
+### BROADCAST Team (AI Production Studio - 8 Agents)
+**Classification:** CONTENT OPERATIONS
+**Lead:** STUDIO PRIME
+**Manual:** `BROADCAST_TEAM.md`
+**Mission:** YouTube channel domination via AI-powered content pipeline
+
+| Codename | Role | Domain |
+|----------|------|--------|
+| **STUDIO PRIME** | Team Lead | Workflow orchestration, automation |
+| **RADAR** | Trend Hunter | Breakout topic ID, SEO heist, metadata extraction |
+| **SKELETON** | Structure Cloning | Retention beat sheets, viral templates |
+| **AVATAR** | Audience Psychologist | Viewer persona, banned phrases, slang |
+| **BAIT** | Thumbnail Pre-Viz | 50 variations, CTR prediction, title engineering |
+| **ROAST** | Adversarial Simulator | Pre-upload stress testing, boredom flagging |
+| **PULSE** | Audio Engineer | Dopamine micro-interruptions, AVD optimization |
+| **ECHO** | Global Expansion | AI dubbing, language CPM, channel multiplication |
 
 ---
 
@@ -192,6 +209,18 @@
 | 24 | RETRIEVER | APEX | RAG Engine |
 | 25 | SENTINEL | APEX | Compliance |
 | 26 | ECHO | APEX | Brand Voice |
+| 27 | ARCHON | COGNITIVE ARCHITECTURE | Lead |
+| 28 | ATLAS | COGNITIVE ARCHITECTURE | Knowledge Graph |
+| 29 | ANVIL | COGNITIVE ARCHITECTURE | Toolsmith |
+| 30 | GAUNTLET | COGNITIVE ARCHITECTURE | Evaluator |
+| 31 | STUDIO PRIME | BROADCAST | Lead |
+| 32 | RADAR | BROADCAST | Trends |
+| 33 | SKELETON | BROADCAST | Structure |
+| 34 | AVATAR | BROADCAST | Audience |
+| 35 | BAIT | BROADCAST | Packaging |
+| 36 | ROAST | BROADCAST | QA |
+| 37 | PULSE | BROADCAST | Audio |
+| 38 | ECHO | BROADCAST | Global |
 
 ---
 
@@ -290,14 +319,16 @@ Level 4: The General decides
 | DEVOPS | READY | 3/3 |
 | CRUCIBLE | READY | 3/3 |
 | APEX | READY | 10/10 |
+| BROADCAST | READY | 8/8 |
 | BLACKOUT | READY | 6/6 |
 | NEURAL CORE | READY | 7/7 |
 | COGNITIVE ARCHITECTURE | READY | 4/4 |
-| **TOTAL** | **OPERATIONAL** | **44/44** |
+| **TOTAL** | **OPERATIONAL** | **52/52** |
 
 ---
 
 *Structure ratified by The General on 2025-12-25*
 *CRUCIBLE Team established 2025-12-25*
 *APEX Team established 2025-12-25*
+*BROADCAST Team established 2025-12-25*
 *All agents reporting for duty.*
