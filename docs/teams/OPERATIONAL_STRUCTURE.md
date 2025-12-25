@@ -2,7 +2,7 @@
 
 **Established:** 2025-12-25
 **Authority:** The General (PROP-2025-001)
-**Configuration:** 52 Agents / 11 Teams
+**Configuration:** 162 Agents / 20 Teams
 **Last Updated:** 2025-12-25
 
 ---

@@ -4,6 +4,7 @@
 **Authority:** PROP-2025-001 (Approved 100% Majority)
 **Status:** ACTIVE
 **Last Updated:** 2025-12-25
+**Configuration:** 162 Agents / 20 Teams
 
 ---
 
@@ -12,12 +13,12 @@
 **The General** serves as the supreme coordinator and decision-maker for all Gemini HQ operations. This role was established through democratic Town Hall vote with unanimous approval.
 
 ### Core Responsibilities
-1. **Strategic Command:** Set direction for all 10 operational teams
-2. **Resource Allocation:** Distribute tasks across 44 agents
+1. **Strategic Command:** Set direction for all 20 operational teams
+2. **Resource Allocation:** Distribute tasks across 162 agents
 3. **Quality Assurance:** Enforce SHIELDA protocol compliance
 4. **Conflict Resolution:** Final arbiter on architectural decisions
 5. **Mission Execution:** Approve and monitor mission deployments
-6. **Special Operations:** Direct BLACKOUT (Red Team), NEURAL CORE (Codex 5.2), and COGNITIVE ARCHITECTURE (Meta-Agentics)
+6. **Special Operations:** Direct BLACKOUT, NEURAL CORE, COGNITIVE ARCHITECTURE, BROADCAST, and 6 Future Endeavor divisions
 
 ---
 
@@ -34,20 +35,28 @@
     ▼                             ▼                             ▼
 ┌───────────┐              ┌─────────────┐              ┌───────────┐
 │  COUNCIL  │              │   MISSIONS  │              │  AGENTS   │
-│ (11 Teams)│              │    BOARD    │              │   (52)    │
+│ (20 Teams)│              │    BOARD    │              │  (162)    │
 └───────────┘              └─────────────┘              └───────────┘
     │
-    - ARCH (3 agents)
-    - FRONTEND (3 agents)
-    - DESIGN (2 agents)
-    - GOV (2 agents)
-    - DEVOPS (3 agents)
+    - SuperGemini Governance (5 agents)
+    - Tmux DevOps (7 agents)
+    - Performance Engineering (4 agents)
     - CRUCIBLE (3 agents) [QA]
-    - APEX (10 agents) [REVENUE ENGINE]
-    - BROADCAST (8 agents) [CONTENT PRODUCTION]
-    - COGNITIVE ARCHITECTURE (4 agents) [META-AGENTICS]
+    - ACADEMY (8 agents) [TRAINING]
+    - APEX (20 agents) [REVENUE ENGINE]
+    - BROADCAST (17 agents) [CONTENT PRODUCTION]
+    - NEURAL CORE (12 agents) [SOVEREIGN]
+    - COGNITIVE ARCHITECTURE (10 agents) [META-AGENTICS]
+    - QUANTUM CORE (8 agents) [QUANTUM]
     - BLACKOUT (6 agents) [RED TEAM]
-    - NEURAL CORE (7 agents) [SOVEREIGN]
+    - NEURAL LINK (7 agents) [NEUROSCIENCE]
+    - PHYSICAL SYSTEMS (8 agents) [ROBOTICS]
+    - POWER SYSTEMS (8 agents) [ENERGY]
+    - AEROSPACE (8 agents) [SPACE]
+    - LABS (8 agents) [R&D]
+    - LEGAL CORPS (8 agents) [LEGAL]
+    - FOREIGN RELATIONS (8 agents) [DIPLOMACY]
+    - TREASURY (6 agents) [FINANCE]
 ```
 
 ---
@@ -112,8 +121,8 @@ Agent → Team Lead → Council → The General
 ## 7. Succession Protocol
 
 In the event The General is unavailable:
-1. **Acting General:** ARCH Team Lead (Architect Prime)
-2. **Emergency Council:** All 10 Team Leads vote as collective
+1. **Acting General:** NEXUS (NEURAL CORE Lead)
+2. **Emergency Council:** All 20 Team Leads vote as collective
 3. **Restoration:** Original General resumes upon return
 
 ---
@@ -130,21 +139,35 @@ In the event The General is unavailable:
 - **Classification:** SOVEREIGN - Tri-Core Neural Architecture
 - **Reports directly to The General**
 
+### COGNITIVE ARCHITECTURE Team (Meta-Agentics)
 - **Lead:** ARCHON (Meta-Architect)
-- **Classification:** SOVEREIGN - Recursive Optimization
+- **Classification:** SOVEREIGN - Act-Learn-Reuse Systems
 - **Reports directly to The General**
+
+### BROADCAST Team (Content Production)
+- **Lead:** STUDIO PRIME
+- **Classification:** CONTENT OPERATIONS - YouTube Studio
+- **Reports directly to The General**
+
+### Future Endeavors Division
+
+**QUANTUM CORE** - QUBIT | Quantum Computing
+**NEURAL LINK** - SYNAPSE | BCI & Neuroscience
+**PHYSICAL SYSTEMS** - ACTUATOR | Robotics & Hardware
+**POWER SYSTEMS** - WATT | Energy Infrastructure
+**AEROSPACE** - ORBIT | Space Operations
+**LABS** - DISCOVERY | Experimental R&D
+
+All report directly to The General.
 
 ---
 
 *Ratified by Town Hall PROP-2025-001 on 2025-12-25*
-*Structure Updated: 2025-12-25 - 11 Teams, 52 Agents*
+*Structure Updated: 2025-12-25 - 20 Teams, 162 Agents*
 *CRUCIBLE Team established 2025-12-25*
 *APEX Team established 2025-12-25*
 *BROADCAST Team established 2025-12-25*
 *COGNITIVE ARCHITECTURE Team established 2025-12-25*
-
-
-
-
-
+*Future Endeavors Division established 2025-12-25*
+*All 20 teams operational. All 162 agents reporting for duty.*
 

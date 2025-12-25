@@ -3,8 +3,8 @@
 > *"We do not write code. We rearrange the entropy of the universe until the solution is the only inevitable outcome."*
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Teams](https://img.shields.io/badge/Teams-11-blue)]()
-[![Agents](https://img.shields.io/badge/Agents-52-green)]()
+[![Teams](https://img.shields.io/badge/Teams-20-blue)]()
+[![Agents](https://img.shields.io/badge/Agents-162-green)]()
 [![Status](https://img.shields.io/badge/Status-OPERATIONAL-brightgreen)]()
 
 ---
@@ -47,26 +47,34 @@ This repository contains the operational structure, team configurations, agent p
 |------|-------------|
 | Supreme Commander | **The General** |
 
-### Standard Operations (16 Agents)
+### Operations & Infrastructure (25 Agents)
 
 | Team | Lead | Agents | Focus |
 |------|------|--------|-------|
-| **ARCH** | Architect Prime | 3 | Architecture, DDD, Type Systems |
-| **FRONTEND** | Component Commander | 3 | React, Next.js, Components |
-| **DESIGN** | Design Director | 2 | Figma, Design Tokens, Animation |
-| **GOV** | Protocol Officer | 2 | Compliance, Memory, Context |
-| **DEVOPS** | Ops Commander | 3 | CI/CD, Caching, Security |
-| **CRUCIBLE** | VALIDATOR | 3 | Quality Assurance, Testing, Coverage |
+| **SuperGemini Governance** | Protocol Officer | 5 | Compliance, Memory, Context |
+| **Tmux DevOps** | Ops Commander | 7 | CI/CD, Caching, Security |
+| **Performance Engineering** | PERF_PRIME | 4 | Optimization, Benchmarking |
+| **CRUCIBLE** | VALIDATOR | 3 | Quality Assurance, Testing |
+| **ACADEMY** | PROFESSOR | 8 | Training, Education, Onboarding |
 
-### Special Operations (29 Agents)
+### Special Operations (115 Agents)
 
 | Team | Lead | Agents | Classification |
 |------|------|--------|----------------|
-| **APEX** | APEX PRIME | 10 | STRATEGIC OPS - AI-Powered Revenue Engine |
-| **BROADCAST** | STUDIO PRIME | 8 | CONTENT OPS - YouTube Production Studio |
-| **COGNITIVE ARCHITECTURE** | ARCHON | 4 | SOVEREIGN - Act-Learn-Reuse Meta-Agentics |
+| **APEX** | APEX PRIME | 20 | REVENUE - AI-Powered Revenue Engine |
+| **BROADCAST** | STUDIO PRIME | 17 | CONTENT - YouTube Production Studio |
+| **NEURAL CORE** | NEXUS | 12 | SOVEREIGN - Codex 5.2 Architecture |
+| **COGNITIVE ARCHITECTURE** | ARCHON | 10 | SOVEREIGN - Act-Learn-Reuse Meta-Agentics |
+| **QUANTUM CORE** | QUBIT | 8 | QUANTUM - Quantum Computing & Algorithms |
 | **BLACKOUT** | SPECTRE | 6 | RED TEAM - Offensive Cyber Operations |
-| **NEURAL CORE** | NEXUS | 7 | SOVEREIGN - Codex 5.2 Architecture |
+| **NEURAL LINK** | SYNAPSE | 7 | NEUROSCIENCE - BCI & Brain Interfaces |
+| **PHYSICAL SYSTEMS** | ACTUATOR | 8 | ROBOTICS - Hardware & Manufacturing |
+| **POWER SYSTEMS** | WATT | 8 | ENERGY - Infrastructure & Sustainability |
+| **AEROSPACE** | ORBIT | 8 | SPACE - Orbital Operations |
+| **LABS** | DISCOVERY | 8 | R&D - Experimental Research |
+| **LEGAL CORPS** | COUNSEL | 8 | LEGAL - Law & Regulation |
+| **FOREIGN RELATIONS** | AMBASSADOR | 8 | DIPLOMACY - Partnerships & Alliances |
+| **TREASURY** | LEDGER | 6 | FINANCE - Crypto & Asset Management |
 
 ---
 
