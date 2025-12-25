@@ -1,4 +1,6 @@
 import { prisma } from '@repo/database';
+import fs from 'fs';
+import path from 'path';
 
 type MemberSeed = {
   name: string;
@@ -11,6 +13,32 @@ type TeamSeed = {
   lead: string;
   members: MemberSeed[];
   aliases?: string[];
+};
+
+type ConflictResolution = {
+  strategy: string;
+  format: string;
+  teamNormalize: string;
+  aliasLabel: string;
+};
+
+type GeneralDirectives = {
+  noPurge: boolean;
+  conflictResolution: ConflictResolution;
+  legacyTeamMerge: Array<{ from: string; to: string }>;
+};
+
+const defaultDirectives: GeneralDirectives = {
+  noPurge: true,
+  conflictResolution: {
+    strategy: 'suffix_team',
+    format: '{team}_{name}',
+    teamNormalize: 'upper_snake',
+    aliasLabel: 'Alias'
+  },
+  legacyTeamMerge: [
+    { from: 'Performance Engineering', to: 'Tmux DevOps' }
+  ]
 };
 
 const coreTeams: TeamSeed[] = [
@@ -135,9 +163,72 @@ const commandTeam: TeamSeed = {
 
 const allTeams = [...coreTeams, ...specialTeams, commandTeam];
 
-const legacyTeamMerges: Array<{ from: string; to: string }> = [
-  { from: 'Performance Engineering', to: 'Tmux DevOps' },
-];
+const directivesPath = path.resolve(process.cwd(), 'config', 'general.json');
+
+function loadGeneralDirectives(): GeneralDirectives {
+  try {
+    const raw = fs.readFileSync(directivesPath, 'utf8');
+    const parsed = JSON.parse(raw);
+    const directives = parsed?.directives || {};
+    return {
+      ...defaultDirectives,
+      ...directives,
+      conflictResolution: {
+        ...defaultDirectives.conflictResolution,
+        ...(directives.conflictResolution || {})
+      },
+      legacyTeamMerge: Array.isArray(directives.legacyTeamMerge)
+        ? directives.legacyTeamMerge
+        : defaultDirectives.legacyTeamMerge
+    };
+  } catch {
+    return defaultDirectives;
+  }
+}
+
+function normalizeTeamName(team: string, mode: string) {
+  if (mode !== 'upper_snake') return team;
+  return team
+    .trim()
+    .toUpperCase()
+    .replace(/[^A-Z0-9]+/g, '_')
+    .replace(/^_+|_+$/g, '');
+}
+
+function formatName(format: string, team: string, name: string) {
+  return format.replace('{team}', team).replace('{name}', name);
+}
+
+function resolveMemberName(
+  teamName: string,
+  member: MemberSeed,
+  directives: GeneralDirectives,
+  usedNames: Set<string>
+) {
+  const rule = directives.conflictResolution;
+  let resolved = member.name;
+  let alias: string | null = null;
+
+  if (usedNames.has(resolved)) {
+    const teamKey = normalizeTeamName(teamName, rule.teamNormalize);
+    const base = formatName(rule.format, teamKey, member.name);
+    let candidate = base;
+    let suffix = 2;
+    while (usedNames.has(candidate)) {
+      candidate = `${base}_${suffix++}`;
+    }
+    resolved = candidate;
+    alias = member.name;
+  }
+
+  usedNames.add(resolved);
+  const capabilities =
+    alias && !member.capabilities.includes(`${rule.aliasLabel}: ${alias}`)
+      ? `${member.capabilities}; ${rule.aliasLabel}: ${alias}`
+      : member.capabilities;
+
+  return { name: resolved, capabilities };
+}
 
 async function ensureTeam(team: TeamSeed) {
   let existing = await prisma.agentTeam.findUnique({ where: { name: team.name } });
@@ -164,7 +255,7 @@ async function ensureTeam(team: TeamSeed) {
   return existing;
 }
 
-async function seedTeam(team: TeamSeed) {
+async function seedTeam(team: TeamSeed, directives: GeneralDirectives, usedNames: Set<string>) {
   const dbTeam = await ensureTeam(team);
 
   await prisma.agentMember.updateMany({
@@ -173,8 +264,15 @@ async function seedTeam(team: TeamSeed) {
   });
 
   let leadId = '';
-  for (const member of team.members) {
-    const isLead = member.name === team.lead;
+  const nameMap = new Map<string, string>();
+  const resolvedMembers: MemberSeed[] = team.members.map((member) => {
+    const resolved = resolveMemberName(team.name, member, directives, usedNames);
+    nameMap.set(member.name, resolved.name);
+    return resolved;
+  });
+  const resolvedLeadName = nameMap.get(team.lead) || team.lead;
+  for (const member of resolvedMembers) {
+    const isLead = member.name === resolvedLeadName;
     const record = await prisma.agentMember.upsert({
       where: { name: member.name },
       update: {
@@ -202,8 +300,8 @@ async function seedTeam(team: TeamSeed) {
   });
 }
 
-async function mergeLegacyTeams() {
-  for (const merge of legacyTeamMerges) {
+async function mergeLegacyTeams(merges: Array<{ from: string; to: string }>) {
+  for (const merge of merges) {
     const fromTeam = await prisma.agentTeam.findUnique({ where: { name: merge.from } });
     const toTeam = await prisma.agentTeam.findUnique({ where: { name: merge.to } });
 
@@ -222,11 +320,14 @@ async function mergeLegacyTeams() {
 }
 
 async function seed() {
+  const directives = loadGeneralDirectives();
+  const usedNames = new Set<string>();
+
   for (const team of allTeams) {
-    await seedTeam(team);
+    await seedTeam(team, directives, usedNames);
   }
 
-  await mergeLegacyTeams();
+  await mergeLegacyTeams(directives.legacyTeamMerge);
 
   console.log('Structure seeded.');
 }

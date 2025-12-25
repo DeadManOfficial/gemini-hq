@@ -14,7 +14,15 @@ export interface Mission {
 }
 
 // domain/governance.ts
-export type TeamDomain = 'ENGINEERING' | 'FRONTEND' | 'GOVERNANCE' | 'OPS' | 'DESIGN' | 'RESEARCH';
+export type TeamDomain =
+  | 'ENGINEERING'
+  | 'FRONTEND'
+  | 'GOVERNANCE'
+  | 'OPS'
+  | 'DESIGN'
+  | 'RESEARCH'
+  | 'QA'
+  | 'REVENUE';
 
 export interface AgentMember {
   id: string;

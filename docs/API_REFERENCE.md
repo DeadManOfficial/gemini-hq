@@ -41,6 +41,21 @@ All responses include a `x-request-id` header for tracing.
 `DELETE /api/missions/:id`
 - **Action:** Removes the mission from history.
 
+### Governance
+`GET /api/governance/status`
+- **Returns:** Team roster, members, and current leads.
+
+`POST /api/governance/vote`
+- **Body:**
+  ```json
+  {
+    "voterId": "string",
+    "candidateId": "string",
+    "teamId": "string"
+  }
+  ```
+- **Returns:** Vote result and updated lead if applicable.
+
 ---
 
 ## Error Responses

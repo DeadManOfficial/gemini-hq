@@ -6,6 +6,7 @@ import { requestIdMiddleware } from './middleware/request-id.middleware';
 import { authMiddleware } from './middleware/auth.middleware';
 import { logger } from '@repo/logger';
 import missionRoutes from './routes/mission.routes';
+import governanceRoutes from './modules/governance/controllers/governance.controller';
 
 const app = express();
 const port = process.env.PORT || 4000;
@@ -47,6 +48,7 @@ app.use('/api', authMiddleware);
 
 // API Routes
 app.use('/api/missions', missionRoutes);
+app.use('/api/governance', governanceRoutes);
 
 // SHIELDA Error Handler
 app.use(errorMiddleware);

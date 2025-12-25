@@ -1,0 +1,19 @@
+{
+  "name": "The General",
+  "version": "1.0.0",
+  "directives": {
+    "noPurge": true,
+    "conflictResolution": {
+      "strategy": "suffix_team",
+      "format": "{team}_{name}",
+      "teamNormalize": "upper_snake",
+      "aliasLabel": "Alias"
+    },
+    "legacyTeamMerge": [
+      {
+        "from": "Performance Engineering",
+        "to": "Tmux DevOps"
+      }
+    ]
+  }
+}
