@@ -1,0 +1,58 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+model User {
+  id        String   @id @default(uuid())
+  email     String   @unique
+  password  String
+  name      String?
+  role      String   @default("USER")
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Mission {
+  id          String   @id @default(uuid())
+  codeName    String   @unique
+  description String
+  status      String   @default("PENDING")
+  priority    String   @default("MEDIUM")
+  progress    Int      @default(0)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model AgentTeam {
+  id      String        @id @default(uuid())
+  name    String        @unique
+  domain  String
+  leadId  String?
+  members AgentMember[]
+  votes   Vote[]
+}
+
+model AgentMember {
+  id           String    @id @default(uuid())
+  name         String    @unique
+  domain       String
+  capabilities String    // Stored as comma-separated or JSON
+  vibeScore    Int       @default(100)
+  isLead       Boolean   @default(false)
+  teamId       String?
+  team         AgentTeam? @relation(fields: [teamId], references: [id])
+}
+
+model Vote {
+  id          String    @id @default(uuid())
+  voterId     String
+  candidateId String
+  teamId      String
+  timestamp   DateTime  @default(now())
+  team        AgentTeam @relation(fields: [teamId], references: [id])
+}
