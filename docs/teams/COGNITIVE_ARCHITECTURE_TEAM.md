@@ -65,6 +65,11 @@ The Cognitive Architecture Team designs the **Act-Learn-Reuse** engine that powe
 ## REFERENCES
 
 - `Knowledge_Base/Agentic_Engineering/ACT_LEARN_REUSE_PLAYBOOK.md`
+- `Knowledge_Base/Agentic_Engineering/COGNITIVE_ARCHITECTURE_CHARTER.md`
+- `Knowledge_Base/Agentic_Engineering/WORKFLOW_CHECKLIST.md`
+- `Knowledge_Base/Agentic_Engineering/APPROVED_SKILLS.md`
+- `Knowledge_Base/Agentic_Engineering/ROADMAP.md`
+- `Knowledge_Base/Agentic_Engineering/EVALUATION_RUBRIC.md`
 
 ---
 

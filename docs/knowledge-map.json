@@ -93,7 +93,12 @@
         "Knowledge_Base/ShadCN_Frontend/FRONTEND_MANUAL.md",
         "Knowledge_Base/Tmux_DevOps/OPS_MANUAL.md",
         "Knowledge_Base/SuperGemini_Governance/GOVERNANCE_MANUAL.md",
-        "Knowledge_Base/Agentic_Engineering/ACT_LEARN_REUSE_PLAYBOOK.md"
+        "Knowledge_Base/Agentic_Engineering/ACT_LEARN_REUSE_PLAYBOOK.md",
+        "Knowledge_Base/Agentic_Engineering/COGNITIVE_ARCHITECTURE_CHARTER.md",
+        "Knowledge_Base/Agentic_Engineering/WORKFLOW_CHECKLIST.md",
+        "Knowledge_Base/Agentic_Engineering/APPROVED_SKILLS.md",
+        "Knowledge_Base/Agentic_Engineering/ROADMAP.md",
+        "Knowledge_Base/Agentic_Engineering/EVALUATION_RUBRIC.md"
       ]
     },
     {
@@ -193,6 +198,36 @@
       "type": "doc",
       "category": "manuals",
       "summary": "Act-Learn-Reuse playbook and external research summary."
+    },
+    {
+      "path": "Knowledge_Base/Agentic_Engineering/COGNITIVE_ARCHITECTURE_CHARTER.md",
+      "type": "doc",
+      "category": "manuals",
+      "summary": "Team charter, scope, and success metrics for Cognitive Architecture."
+    },
+    {
+      "path": "Knowledge_Base/Agentic_Engineering/WORKFLOW_CHECKLIST.md",
+      "type": "doc",
+      "category": "manuals",
+      "summary": "Operational checklist for the Act-Learn-Reuse loop."
+    },
+    {
+      "path": "Knowledge_Base/Agentic_Engineering/APPROVED_SKILLS.md",
+      "type": "doc",
+      "category": "manuals",
+      "summary": "Approved Codex skills list and expansion criteria."
+    },
+    {
+      "path": "Knowledge_Base/Agentic_Engineering/ROADMAP.md",
+      "type": "doc",
+      "category": "manuals",
+      "summary": "Phased roadmap with milestones and exit criteria."
+    },
+    {
+      "path": "Knowledge_Base/Agentic_Engineering/EVALUATION_RUBRIC.md",
+      "type": "doc",
+      "category": "manuals",
+      "summary": "Scoring rubric and release gates for agent evaluations."
     },
     {
       "path": "Knowledge_Base/SuperGemini_Governance/ROUTER_OPTIMIZATION_PROGRESS.md",
