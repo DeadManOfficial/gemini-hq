@@ -1,0 +1,283 @@
+{
+  "name": "Gemini HQ Knowledge Map",
+  "repoRoot": "C:/Users/Administrator/Gemini_HQ",
+  "scope": {
+    "included": [
+      "apps/api",
+      "packages/*",
+      "docs/*",
+      "Knowledge_Base/*"
+    ],
+    "excluded": [
+      "node_modules",
+      ".turbo",
+      "coverage",
+      "dist",
+      "build",
+      ".env",
+      "*.db",
+      "*.sqlite"
+    ]
+  },
+  "sections": [
+    {
+      "id": "overview",
+      "title": "Overview",
+      "summary": "High-level system description and command structure.",
+      "paths": [
+        "README.md",
+        "SYSTEM_MANIFEST.md"
+      ]
+    },
+    {
+      "id": "architecture",
+      "title": "Architecture",
+      "summary": "Tri-Core architecture and operational structure.",
+      "paths": [
+        "docs/architecture/TRI_CORE_ARCHITECTURE.md",
+        "docs/teams/OPERATIONAL_STRUCTURE.md"
+      ]
+    },
+    {
+      "id": "organization",
+      "title": "Organization",
+      "summary": "Team definitions and leadership dossiers.",
+      "paths": [
+        "docs/teams/THE_GENERAL.md",
+        "docs/teams/BLACKOUT_TEAM.md",
+        "docs/teams/NEURAL_CORE_TEAM.md"
+      ]
+    },
+    {
+      "id": "api",
+      "title": "API",
+      "summary": "API reference and Express route definitions.",
+      "paths": [
+        "docs/API_REFERENCE.md",
+        "apps/api/src/index.ts",
+        "apps/api/src/routes/mission.routes.ts"
+      ]
+    },
+    {
+      "id": "data",
+      "title": "Data and contracts",
+      "summary": "Prisma schema, domain types, and validation.",
+      "paths": [
+        "packages/database/prisma/schema.prisma",
+        "packages/types/src/index.ts",
+        "packages/validation/src/mission.schema.ts"
+      ]
+    },
+    {
+      "id": "packages",
+      "title": "Packages",
+      "summary": "Shared packages and utilities.",
+      "paths": [
+        "packages/database/src/index.ts",
+        "packages/errors/src/index.ts",
+        "packages/logger/src/index.ts",
+        "packages/utils/src/index.ts",
+        "packages/validation/src/index.ts",
+        "packages/analyzer/src/index.ts",
+        "packages/ui/src/index.tsx"
+      ]
+    },
+    {
+      "id": "manuals",
+      "title": "Manuals and directives",
+      "summary": "Design, frontend, ops, and governance manuals.",
+      "paths": [
+        "Knowledge_Base/Automaker_Arch/ARCH_MANUAL.md",
+        "Knowledge_Base/Figma_Design/DESIGN_MANUAL.md",
+        "Knowledge_Base/ShadCN_Frontend/FRONTEND_MANUAL.md",
+        "Knowledge_Base/Tmux_DevOps/OPS_MANUAL.md",
+        "Knowledge_Base/SuperGemini_Governance/GOVERNANCE_MANUAL.md"
+      ]
+    },
+    {
+      "id": "reports",
+      "title": "Reports",
+      "summary": "System and router reports.",
+      "paths": [
+        "docs/reports/PC_ANALYSIS_REPORT.md",
+        "docs/reports/ROUTER_OPTIMIZATION_FINAL_REPORT.md",
+        "docs/reports/TOWN_HALL_RECORDS.md"
+      ]
+    },
+    {
+      "id": "transcript",
+      "title": "Transcript log",
+      "summary": "CLI transcript; treat as sensitive.",
+      "paths": [
+        "C:/2025-12-25-resume.txt"
+      ]
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "README.md",
+      "type": "doc",
+      "category": "overview",
+      "summary": "High-level overview, team structure, and narrative."
+    },
+    {
+      "path": "SYSTEM_MANIFEST.md",
+      "type": "doc",
+      "category": "governance",
+      "summary": "Governance model, technical foundation, and endpoint summary."
+    },
+    {
+      "path": "docs/API_REFERENCE.md",
+      "type": "doc",
+      "category": "api",
+      "summary": "Base URL, auth requirements, and mission endpoints."
+    },
+    {
+      "path": "docs/architecture/TRI_CORE_ARCHITECTURE.md",
+      "type": "doc",
+      "category": "architecture",
+      "summary": "Tri-Core model and responsibilities."
+    },
+    {
+      "path": "docs/missions/MISSION_BOARD.md",
+      "type": "doc",
+      "category": "operations",
+      "summary": "Active missions, priorities, and owners."
+    },
+    {
+      "path": "docs/teams/OPERATIONAL_STRUCTURE.md",
+      "type": "doc",
+      "category": "organization",
+      "summary": "Team list, roles, and structure."
+    },
+    {
+      "path": "docs/teams/THE_GENERAL.md",
+      "type": "doc",
+      "category": "organization",
+      "summary": "Command role definition and authority."
+    },
+    {
+      "path": "docs/teams/BLACKOUT_TEAM.md",
+      "type": "doc",
+      "category": "organization",
+      "summary": "Special operations team dossier."
+    },
+    {
+      "path": "docs/teams/NEURAL_CORE_TEAM.md",
+      "type": "doc",
+      "category": "organization",
+      "summary": "Core architecture team dossier."
+    },
+    {
+      "path": "Knowledge_Base/SuperGemini_Governance/DECISION_MATRIX.md",
+      "type": "doc",
+      "category": "governance",
+      "summary": "Decision criteria and scoring rules."
+    },
+    {
+      "path": "Knowledge_Base/SuperGemini_Governance/GOVERNANCE_MANUAL.md",
+      "type": "doc",
+      "category": "governance",
+      "summary": "SHIELDA protocol and context guidance."
+    },
+    {
+      "path": "Knowledge_Base/SuperGemini_Governance/ROUTER_OPTIMIZATION_PROGRESS.md",
+      "type": "doc",
+      "category": "report",
+      "summary": "Router optimization progress log.",
+      "sensitivity": "sensitive"
+    },
+    {
+      "path": "Knowledge_Base/Tmux_DevOps/OPS_MANUAL.md",
+      "type": "doc",
+      "category": "ops",
+      "summary": "Ops and DevOps practices and safety."
+    },
+    {
+      "path": "packages/database/prisma/schema.prisma",
+      "type": "schema",
+      "category": "data",
+      "summary": "Prisma models for users, missions, and governance."
+    },
+    {
+      "path": "apps/api/src/index.ts",
+      "type": "code",
+      "category": "api",
+      "summary": "Express app setup, middleware, and routes."
+    },
+    {
+      "path": "apps/api/src/modules/governance/controllers/governance.controller.ts",
+      "type": "code",
+      "category": "api",
+      "summary": "Governance endpoints and vote handling."
+    },
+    {
+      "path": "packages/types/src/index.ts",
+      "type": "code",
+      "category": "contracts",
+      "summary": "Domain types and API response contract."
+    },
+    {
+      "path": "packages/validation/src/mission.schema.ts",
+      "type": "code",
+      "category": "validation",
+      "summary": "Mission creation and update schemas."
+    },
+    {
+      "path": "packages/analyzer/src/index.ts",
+      "type": "code",
+      "category": "analysis",
+      "summary": "AutonomicPulse diagnostics stub."
+    },
+    {
+      "path": "find-leads.js",
+      "type": "script",
+      "category": "ops",
+      "summary": "Prisma script to list current leads and members."
+    },
+    {
+      "path": "C:/2025-12-25-resume.txt",
+      "type": "transcript",
+      "category": "audit",
+      "summary": "CLI transcript containing historical actions and system output.",
+      "sensitivity": "sensitive"
+    }
+  ],
+  "mismatches": [
+    {
+      "issue": "Team counts differ across docs (core teams vs total teams).",
+      "sources": [
+        "SYSTEM_MANIFEST.md",
+        "docs/teams/OPERATIONAL_STRUCTURE.md",
+        "README.md",
+        "C:/2025-12-25-resume.txt"
+      ],
+      "proposedFix": "Define core vs total team counts and align README and SYSTEM_MANIFEST to OPERATIONAL_STRUCTURE."
+    },
+    {
+      "issue": "Governance endpoints appear in SYSTEM_MANIFEST but are not mounted in the API and are not in API_REFERENCE.",
+      "sources": [
+        "SYSTEM_MANIFEST.md",
+        "apps/api/src/index.ts",
+        "docs/API_REFERENCE.md"
+      ],
+      "proposedFix": "Mount governance router at /api/governance and document it, or remove from manifest."
+    },
+    {
+      "issue": "AgentMember.capabilities is string[] in types but String in Prisma schema.",
+      "sources": [
+        "packages/types/src/index.ts",
+        "packages/database/prisma/schema.prisma"
+      ],
+      "proposedFix": "Use Json in Prisma and map to string[], or align types to string and parse consistently."
+    },
+    {
+      "issue": "MissionService comment mentions withRetry but implementation does not use it.",
+      "sources": [
+        "packages/utils/src/index.ts",
+        "apps/api/src/modules/missions/services/mission.service.ts"
+      ],
+      "proposedFix": "Apply withRetry to database calls or update the comment to match current behavior."
+    }
+  ]
+}

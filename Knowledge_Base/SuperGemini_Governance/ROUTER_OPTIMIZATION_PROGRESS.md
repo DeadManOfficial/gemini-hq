@@ -1,8 +1,8 @@
 # ROUTER OPTIMIZATION PROGRESS LOG
 **Session:** 2025-12-25
 **Target:** ASUS GT-BE98 Pro (WiFi 7)
-**IP:** 192.168.50.1
-**Credentials:** Reaper / Schwieters1!
+**IP:** [REDACTED]
+**Credentials:** [REDACTED]
 **Status:** IN PROGRESS - ROUTER REBOOTING
 
 ---
@@ -49,8 +49,8 @@
 ## HOW TO CONTINUE
 
 1. Wait for router to finish rebooting (usually 1-2 minutes)
-2. Navigate back to: http://192.168.50.1
-3. Login: Reaper / Schwieters1!
+2. Navigate back to: [REDACTED]
+3. Login: [REDACTED]
 4. Verify LAN > Switch Control > Jumbo Frame = Enable
 5. Continue to Game mode settings
 6. Continue to Adaptive QoS settings
@@ -60,7 +60,7 @@
 ## NAVIGATION PATH
 
 ```
-Router Admin (192.168.50.1)
+Router Admin ([REDACTED])
 ├── Advanced Settings
 │   ├── Wireless
 │   │   ├── General (channel widths) ✓ VERIFIED

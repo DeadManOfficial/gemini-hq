@@ -129,9 +129,9 @@ Your ISP plan limits you to 1 Gbit, which you are achieving 100%.
 ## ROUTER CREDENTIALS (SECURED)
 
 ```
-URL:      http://192.168.50.1
-Username: Reaper
-Password: Schwieters1!
+URL:      [REDACTED]
+Username: [REDACTED]
+Password: [REDACTED]
 ```
 
 ---
